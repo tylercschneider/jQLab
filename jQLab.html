@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQ Labs</title>
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="jQLab.css">
+</head>
+<body>
+	<div id="container">
+		<h1 id="bigTitle">RESERVATION</h1>
+		<h2 id="subTitle">Please reserve your table</h2>
+		<div id="form">
+			<input type='submit' name="close" id="close" value="x">
+			<h1 id="target">New Reservation</h1>
+			<input type="text" name="name" id="name" placeholder="Your Name">
+			<input type="text" name="phone" id="phone" placeholder="Your Phone #">
+			<input type="text" name="party"	id="party" placeholder="# of People in your Party">
+			<input type="submit" name="book" id="book" value="Book">
+		</div>
+		<div id="tableContainer">
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jQLab.js"></script>
+</body>
+</html>
