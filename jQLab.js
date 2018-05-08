@@ -1,3 +1,4 @@
+let id;
 class Table {
 	draw(i) {
 		let content = $(`<h1></h1>`).text(i);
@@ -9,8 +10,9 @@ class Table {
 
 		let table = $(`#${i}`);
 		console.log(table);
+		// opens form...
 		table.on("click", () => {
-			console.log(table[0].id);
+			id = table[0].id;
 			let content = `Table Number: ${table[0].id}`;
 			let tableNumber = $('<h3></h3>');
 			tableNumber.append(content);
@@ -18,16 +20,6 @@ class Table {
 			let target = $('#target');
 			target.after(tableNumber);
 			$('#form').show();
-			/*
-			$('')
-			if(('.open')){
-				this.addClass('.filled');
-				this.removeClass('.open');
-			}
-			else if (this.is('.filled')) {
-				this.addClass('.open');
-				this.removeClass('.filled');
-			}*/
 		});
 	}
 
@@ -51,8 +43,10 @@ $('#form').hide();
 // on add seat
 // on empty table
 $('#close').on("click", () => {
-
 	$('#form').hide();
 	$('#tableNumber').remove();
 
+});
+$('#book').on("click", () => {
+	$(`#${id}`).
 });
