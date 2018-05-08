@@ -26,6 +26,7 @@ body{
 }
 #container {
 	flex-direction: column;
+	z-index: 1;
 }
 
 #tableContainer {
@@ -53,11 +54,11 @@ body{
 	color: #000;
 	background-color: red;
 }
-.table:hover {
+.open:hover {
 	background-color: yellow;
 }
 #form {
-	background-color: rgba(169,169,169, 1);
+	background-color: rgba(169,169,169, 0.7);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -66,17 +67,29 @@ body{
 	min-height: 500px;
 	padding: 20px 80px;
 	border-radius: 10px;
+	z-index: 2;
 }
 input {
 	padding: 10px 20px 5px 30px;
+	background-color: rgba(169,169,169, 0);
+	border: none;
+	border-bottom: 2px solid black;
+	color: black;
+
 }
 #close {
-	background-color: rgba(169,169,169, 1);
+	background-color: rgba(169,169,169, 0);
 	font-size: 20px;
 	width: 20px;
 	align-self: flex-end;
 	border: none;
 }
+#book {
+	background-color: #fff;
+	border-radius: 10px;
+	border:none;
+}
+
 #form h1 {
 	font-family: arial;
 	margin: 0;
