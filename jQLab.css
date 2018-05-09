@@ -41,11 +41,15 @@ body{
 }
 .table {
 	height: 80px;
-	font-size: 30px;
 	width: 80px;
 	border-radius: 100%;
 	margin: 20px;
 	flex-direction: column;
+}
+.table h1 {
+	margin:0;
+	font-family: arial;
+	display: relative;
 }
 .open {
 	color:	#fff;
@@ -96,12 +100,16 @@ input {
 	margin: 0;
 }
 #reserve {
-	font-size: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	margin:0;
+	padding: 4px;
 	position: relative;
+	background-color: rgba(169,169,169, 1);
+	width:150%;
+	height:80px;
+	border: 1px solid black;
+	border-radius: 10px;
+	top: 43px;
+	text-align: center;
 }
 #reserve h5, #reserve p {
 	margin: 0;

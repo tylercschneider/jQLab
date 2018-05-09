@@ -51,13 +51,10 @@ class Reservation {
 			let contain = document.createElement('div');
 			let content = document.createElement('h5');
 			let para1 = document.createElement('p');	
-			let para2 = document.createElement('p');
 			content.textContent = this.person;
-			para1.textContent = this.phone;
-			para2.textContent = this.party;
+			para1.textContent = `Party of ${this.party}`;
 			contain.appendChild(content);
 			contain.appendChild(para1);
-			contain.appendChild(para2);
 			contain.setAttribute('id', "reserve");
 			checker.appendChild(contain);
 					
